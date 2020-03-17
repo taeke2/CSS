@@ -3,8 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+		#wrap{ display:flex; flex-flow:column; width: 600px;  height: 700px;
+			margin: 0 auto;	border:2px solid black;	text-align: center;}
+		div{ height:450px;}
+		
+		.header01{ order:1; background: red; height:200px;}
+		.nav { order :2; background-color: gold; heigth:150px;}
+		.section{ order:3; display:flex;}
+		.footer01{ order:4; background: pink; height:150px;}
+		
+		.header02{ order:1; border:2px solid black; background: pink; height: 30px; margin: 10px;}
+		.article{ order:2; border:2px solid black; background: pink; height: 30px; margin: 10px;}
+		.footer02{ order:3; border:2px solid black; background: pink; height: 30px; margin: 10px;}
+
+		
+		.section1 { order :2; background-color: green; width:400px; heigth:450px;}
+		.aside { order :3; background-color: skyblue; width:200px; heigth:450px;}
+		
+</style>
 </head>
 <body>
-
+	<div id="wrap">
+		<div class="header01"><h1>&lsaquo; header &rsaquo;</h1></div>
+		<div class="nav"><h2>&lsaquo; nav &rsaquo;</h2></div>
+		<div class="section">
+			<div class="section1"><h2>&lsaquo; section1 &rsaquo;</h2>
+				<div class="header02">header</div>
+				<div class="article">article</div>
+				<div class="footer02">footer</div>
+			</div>
+			<div class="aside"><h2>&lsaquo; aside &rsaquo;</h2></div>
+		</div>
+		<div class="footer01"><h2>&lsaquo; footer &rsaquo;</h2></div>
+	</div>
 </body>
 </html>

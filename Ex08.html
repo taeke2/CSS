@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* margin:0 auto 는 페이지에서 가운데 정렬해줌 */
+	.div {border:3px solid blue; width:500px; margin:0 auto;}
+	.fix {overflow: auto;}
+	.header {border: 3px solid pink;}
+	.nav {float: left; width: 170px; height: 195px; border: 3px solid gold;}
+	.section {margin: 0 0 0 177px; width: 315px; border: 3px solid red;}
+	.footer {height: 20px; border: 3px solid skyblue;	}
+	
+	/* box-sizing을 이용하면 틀 길이를 일정하게 맞출 수 있다. */
+	*{box-sizing: border-box;}
+	div {margin: 10px; width: 150px;}
+	#default {border: 1px solid black;} 
+	#small {border: 10px solid black;} 
+	#large {border: 30px solid black;} 
+	
+</style>
+</head>
+<body>
+	<div id="small">Hello</div>
+	<div id="large">Hello</div>
+	<div id="default">Hello</div>
+<hr>
+	<div class="div fix">
+		<header class="header"><h1>제목</h1></header>
+		<nav class="nav">
+			<span>목차(nav)</span>
+			<ul>
+				<li><a href="#">Google</a></li>
+				<li><a href="#">Apple</a></li>
+				<li><a href="#">W3C</a></li>
+				
+			</ul>
+		</nav>
+		<section class="section">
+			<span>section1</span><p>float 속성은 시맨틱 문서 구조에 유용하게 사용할 수 있습니다.</p>
+		</section>
+		<section class="section">
+			<span>section2</span><p>float 속성은 시맨틱 문서 구조에 유용하게 사용할 수 있습니다.</p>
+		</section>
+		<section>
+			<footer class="footer">마지막 글</footer>
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	body { font-weight: bold; font-size: 12pt; background:gray; }
+	.span1 { background: yellow; position: static; top:5px; }
+	.span2 { background: red; left: 10px; }
+	.span3 { background: pink; position: static; top: -5px; }
+	
+	/*
+	.span1 { background: yellow; position: relative; top:5px; }
+	.span2 { background: red; position: relative; left: 10px; }
+	.span3 { background: pink; position: relative; top: -5px; }
+	position이 relative는 static인 div를 기준으로 위치를 표시한다.
+	*/
+	
+	/*
+	.span1 { background: yellow; position: absolute; top:5px; }
+	.span2 { background: red; position: absolute; left: 10px; }
+	.span3 { background: pink; position: absolute; top: -5px; }
+	position이 absolute는 창을 기준으로 위치를 표시한다.
+	*/
+	div { background: skyblue; }
+</style>
+</head>
+<body>
+	<div style="background-color: green;">position</div>
+	<span class="span1">span1</span>
+	<span class="span2">span2</span>
+	<span class="span3">span3</span>
+	<div>기본 값은 static 입니다.</div>
+</body>
+</html>
